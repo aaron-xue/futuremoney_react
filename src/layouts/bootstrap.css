@@ -2189,9 +2189,14 @@ select[multiple].input-lg {
     float: right;
     background: url(./button.png) no-repeat;
     background-size: contain;
+    background-position: center;
     width: 1rem;
     height: 1rem;
     margin-top: 1rem;
+}
+.navbar-toggle-close{
+    background: url(./close.png) no-repeat;
+    background-size: contain;
 }
 
 @media (min-width: 1200px) {
@@ -2423,7 +2428,7 @@ select[multiple].input-lg {
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #555555;
+    color: #000;
 }
 
 .navbar-default .navbar-nav>.disabled>a,
