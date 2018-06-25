@@ -1,0 +1,43 @@
+.navbar-header {
+    .logo_top {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        background: url(./logo.png) no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+    }
+    a {
+        text-decoration: none
+    }
+    .brand {}
+}
+
+.link_item {
+    text-align: right;
+    font-size: .6rem;
+}
+
+.active {
+    font-weight: bold;
+    position: relative;
+    &::after {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .active {
+        &::after {
+            display: block;
+            content: '';
+            width: 5px;
+            height: 5px;
+            background: #000;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            border-radius: 50%;
+        }
+    }
+}
