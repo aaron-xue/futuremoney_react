@@ -119,13 +119,16 @@
     padding: 5rem 0;
   }
 }
+#tab_panel2 .row {
+  margin: 2rem 0;
+}
 #tab_panel2 .tab_panel2_item {
   text-align: center;
   margin-bottom: 1.4rem;
 }
 #tab_panel2 .tab_panel2_item img {
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   background-color: #c1c1c1;
   border-radius: 50%;
   display: inline-block;

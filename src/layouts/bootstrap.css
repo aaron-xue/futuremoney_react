@@ -2059,8 +2059,10 @@ select[multiple].input-lg {
     -webkit-overflow-scrolling: touch;
     transition: .5s linear;
     transform: translate3D(0,-100%,0);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     background-color: #fff;
+}
+.navbar-collapse_shadow{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 .showNav{
     transform: translate3D(0,0,0);
@@ -2396,7 +2398,7 @@ select[multiple].input-lg {
     .navbar-right~.navbar-right {
         margin-right: 0;
     }
-    .navbar-default {
+    .navbar_shadow{
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     }
 }

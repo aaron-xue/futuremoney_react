@@ -19,7 +19,6 @@
 }
 
 .active {
-    font-weight: bold;
     position: relative;
     &::after {
         display: none;
@@ -31,11 +30,12 @@
         &::after {
             display: block;
             content: '';
-            width: 5px;
-            height: 5px;
+            width: 8px;
+            height: 8px;
             background: #000;
             position: absolute;
             left: 50%;
+            margin-left: -4px;
             bottom: 0;
             border-radius: 50%;
         }

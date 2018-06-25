@@ -40,6 +40,8 @@ class Header extends Component {
   }
   componentDidMount() {
     let nav_button = $('.navbar-toggle')
+    let navbar_collapse =$('.navbar-collapse ')
+    let navbar =$('.navbar-default');
     nav_button.click(() => {
       this.setState({
         showNav: !this.state.showNav
@@ -50,13 +52,35 @@ class Header extends Component {
         showNav: closeNav
       })
     })
+    window.addEventListener('scroll',()=>{
+      let scrollTop = $(document).scrollTop();
+      if(scrollTop>100){
+        navbar.addClass('navbar_shadow');
+      }else{
+        navbar.removeClass('navbar_shadow');
+      }
+      if(scrollTop>50){
+        navbar_collapse.addClass('navbar-collapse_shadow');
+      }else if(!this.state.showNav){
+        navbar_collapse.removeClass('navbar-collapse_shadow');
+      }
+    })
   }
   componentDidUpdate(){
     let main_links = $('.navbar-collapse')
+    let nav_button = $('.navbar-toggle')
+    let navbar_collapse =$('.navbar-collapse ')
     if (this.state.showNav) {
       main_links.addClass('showNav');
+      nav_button.addClass('navbar-toggle-close')
+      navbar_collapse.addClass('navbar-collapse_shadow')
     } else {
       main_links.removeClass('showNav');
+      nav_button.removeClass('navbar-toggle-close')
+      let scrollTop = $(document).scrollTop();
+      if(scrollTop<50){
+        navbar_collapse.removeClass('navbar-collapse_shadow')
+      }
     }
   }
 }
