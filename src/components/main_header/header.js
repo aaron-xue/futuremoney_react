@@ -30,7 +30,6 @@ class Header extends Component {
               <li className={'link_item'}><a href="javascript:;">TEAM</a></li>
               <li className={'link_item'}><a href="javascript:;">PORTFOLIO</a></li>
               <li className={'link_item'}><a href="javascript:;">FUNDS</a></li>
-              <li className={'link_item'}><a href="javascript:;">CONTACT</a></li>
             </ul>
           </div>
 

@@ -158,27 +158,27 @@
     color: #848484;
   }
 }
-#tab_panel3 {
-  height: 28.2rem;
+#tab_panel2 .tab_panel2_photo {
+  height: 18.2rem;
   background-color: #c1c1c1;
 }
-#tab_panel4 {
+#tab_panel3 {
   text-align: center;
   padding: 3.4rem .5rem;
 }
-#tab_panel4 img {
+#tab_panel3 img {
   display: inline-block;
   margin-bottom: 0;
 }
-#tab_panel5 {
+#tab_panel4 {
   padding-bottom: 6.5rem;
 }
-#tab_panel5 .tab_panel5_item div {
+#tab_panel4 .tab_panel5_item div {
   width: 1.3rem;
   height: 1.3rem;
   margin: 0 auto .8rem;
 }
-#tab_panel5 .tab_panel5_item h2 {
+#tab_panel4 .tab_panel5_item h2 {
   font-family: PingFangSC-Medium;
   font-size: 0.3rem;
   font-weight: bold;
@@ -188,7 +188,7 @@
   color: #000000;
   text-align: center;
 }
-#tab_panel5 .tab_panel5_item p {
+#tab_panel4 .tab_panel5_item p {
   font-family: PingFangSC-Medium;
   font-size: 0.5rem;
   font-weight: normal;
@@ -199,33 +199,33 @@
   text-align: center;
 }
 @media (min-width: 1200px) {
-  #tab_panel5 .tab_panel5_item div {
+  #tab_panel4 .tab_panel5_item div {
     margin-bottom: 2.2rem;
   }
-  #tab_panel5 .tab_panel5_item h2 {
+  #tab_panel4 .tab_panel5_item h2 {
     font-size: 0.9rem;
   }
 }
-#tab_panel5 div:first-of-type div {
+#tab_panel4 div:first-of-type div {
   background: url(../imgs/vwntures.png) no-repeat;
   background-size: contain;
 }
-#tab_panel5 div:last-of-type div {
+#tab_panel4 div:last-of-type div {
   background: url(../imgs/quant.png) no-repeat;
   background-size: contain;
 }
-#tab_panel6 {
+#tab_panel5 {
   background-color: #000;
   overflow: hidden;
 }
-#tab_panel6 .bottom_logo {
+#tab_panel5 .bottom_logo {
   width: 8.1rem;
   height: 1.2rem;
   margin: 3.5rem auto 1.6rem;
   background: url(../imgs/bottom_logo.png) no-repeat;
   background-size: contain;
 }
-#tab_panel6 p {
+#tab_panel5 p {
   font-family: PingFangSC-Medium;
   font-size: 0.6rem;
   font-weight: normal;
