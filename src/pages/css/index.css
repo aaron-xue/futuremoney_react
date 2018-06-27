@@ -119,12 +119,9 @@
     padding: 5rem 0;
   }
 }
-#tab_panel2 .row {
-  margin: 2rem 0;
-}
 #tab_panel2 .tab_panel2_item {
   text-align: center;
-  margin-bottom: 1.4rem;
+  margin-bottom: .8rem;
 }
 #tab_panel2 .tab_panel2_item img {
   width: 3.8rem;
@@ -137,7 +134,7 @@
 #tab_panel2 .tab_panel2_item h2,
 #tab_panel2 .tab_panel2_item p {
   font-size: 0.4rem;
-  margin-bottom: .7rem;
+  margin-bottom: .2rem;
 }
 @media (min-width: 1200px) {
   #tab_panel2 .tab_panel2_item img {
@@ -159,7 +156,7 @@
   }
 }
 #tab_panel2 .tab_panel2_photo {
-  height: 18.2rem;
+  height: 15.2rem;
   background-color: #c1c1c1;
 }
 #tab_panel3 {

@@ -18,7 +18,6 @@ class Header extends Component {
           <div className="navbar-header">
             <Link to="/" style={{ fontSize: '.8rem', color: '#000', fontFamily: 'PingFangSC-Regular' }} className='brand'>
               <span className={`logo_top`}></span>
-              FUTUREMONEY
               </Link>
             <div className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 
