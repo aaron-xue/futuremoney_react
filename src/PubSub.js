@@ -1,4 +1,5 @@
 (function(root,factory){
+    'use strict';
     var PubSub = {};
     root.PubSub = PubSub;
     factory(PubSub);
@@ -10,6 +11,7 @@
         module.exports = exports = PubSub; // CommonJS
     }
 }((typeof window === 'object' && window ) || this,function(PubSub){
+    'use strict';
     var contents = [];      //存放观察者订阅信息的数组
     //观察者添加订阅
     PubSub.subscribe = function(token,callback){

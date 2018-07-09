@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './css/index.css'
 import $ from 'jquery'
-import PubSub from '../PubSub'
+import PubSub from 'pubsub-js'
 
 class IndexPage extends Component {
   constructor(props) {
@@ -145,7 +145,7 @@ class IndexPage extends Component {
       });
 
     })
-    PubSub.subscribe('changeLanguage',key=>{
+    PubSub.subscribe('changeLanguage',(msg,key)=>{
       this.changeLanguage(key)
       PubSub.publish('closeNav', false)
     })

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import './header.css'
 import $ from 'jquery'
-import PubSub from '../../PubSub'
+import PubSub from 'pubsub-js'
 
 class Header extends Component {
   constructor(props) {
@@ -88,7 +88,7 @@ class Header extends Component {
         showNav: !this.state.showNav
       })
     })
-    PubSub.subscribe('closeNav',closeNav=>{
+    PubSub.subscribe('closeNav',(msg,closeNav)=>{
       this.setState({
         showNav: closeNav
       })
