@@ -8,10 +8,24 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showNav: false
+      showNav: false,
+      showLanguageList:false,
+      languages:{
+        EN:1,
+        CN:0
+      }
     }
   }
   render() {
+    var language_change_mobile_c = (<div></div>)
+    var language_change_mobile_list = []
+    Object.keys(this.state.languages).forEach(key => {
+      if (this.state.languages[key]) {
+        language_change_mobile_c = (<div key={key} className={'language_change_mobile_c'} onClick={this.openLanguageList.bind(this)}>{key} <i></i></div>)
+      }else{
+        language_change_mobile_list.push(<li key={key} onClick={this.changeLanguage.bind(this,key)}>{key}</li>)
+      }
+    })
     return (
       <div className={`navbar navbar-default navbar-fixed-top`}>
         <div className="container-fluid">
@@ -29,12 +43,41 @@ class Header extends Component {
               <li className={'link_item'}><a href="javascript:;">TEAM</a></li>
               <li className={'link_item'}><a href="javascript:;">PORTFOLIO</a></li>
               <li className={'link_item'}><a href="javascript:;">FUNDS</a></li>
+              <li className={'language_change'}>
+                <a href="javascript:;" className={'current_ln language'}>EN</a>
+                <i></i>
+                <a href="javascript:;" className={'language'}>CN</a>
+              </li>
+              <li className={'language_change_mobile'}>
+                {language_change_mobile_c}
+                <ul className={`language_change_mobile_list ${this.state.showLanguageList?'language_change_mobile_list_open':''}`}>
+                  {language_change_mobile_list}
+                </ul>
+              </li>
             </ul>
           </div>
-
         </div>
       </div>
     );
+  }
+  changeLanguage(key){
+    let languages = this.state.languages
+    
+    Object.keys(languages).forEach(element => {
+      if (languages[element]) {
+        languages[element] = 0
+      }
+    });
+    languages[key] = 1
+    this.setState({
+      languages:languages
+    })
+    PubSub.publish('changeLanguage',key)
+  }
+  openLanguageList(){
+    this.setState({
+      showLanguageList:!this.state.showLanguageList
+    })
   }
   componentDidMount() {
     let nav_button = $('.navbar-toggle')

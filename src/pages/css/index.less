@@ -35,7 +35,7 @@
             left: 0;
             font-size: 0.4rem;
             padding: 0 1rem;
-            line-height: 1rem;
+            line-height: 1.2rem;
             font-weight: normal;
             font-stretch: normal;
             color: #000000;
@@ -47,7 +47,8 @@
         }
         .tab_panel1_right .tab_panel1_right_content {
             font-size: 0.6rem;
-            line-height: 0.8rem;
+            line-height: .8rem;
+            margin-left: 15px;
         }
     }
     @media (min-width: 1200px) {
@@ -57,7 +58,7 @@
                 width: 15rem;
                 height: 6.8rem;
                 p {
-                    font-family: BaskOldFace;
+                    font-family: PingFangSC-Medium;
                     font-size: 1.9rem;
                     font-weight: normal;
                     font-stretch: normal;
@@ -67,11 +68,12 @@
             }
             .tab_panel1_right_content {
                 left: 1rem;
+                margin-left: 15px;
                 font-family: PingFangSC-Medium;
                 font-size: 0.6rem;
                 font-weight: normal;
                 font-stretch: normal;
-                line-height: .8rem;
+                line-height: 1.4rem;
                 letter-spacing: 0rem;
                 color: #000000;
                 padding: 0;
@@ -133,6 +135,7 @@
     .tab_panel2_item {
         text-align: center;
         margin-bottom: .8rem;
+        display: none;
         img {
             width: 3.8rem;
             height: 3.8rem;
@@ -149,6 +152,7 @@
     }
     @media (min-width: 1200px) {
         .tab_panel2_item {
+            display: none;
             img {
                 width: 5rem;
                 height: 5rem;
@@ -169,7 +173,10 @@
         }
     }
     .tab_panel2_photo{
-        height: 15.2rem;
+        img{
+            width: 100%;
+            margin: 0;
+        }
         background-color: #c1c1c1;
     }
 }
@@ -206,7 +213,7 @@
             font-size: 0.5rem;
             font-weight: normal;
             font-stretch: normal;
-            line-height: 0.8rem;
+            line-height: 1rem;
             letter-spacing: 0rem;
             color: #555555;
             text-align: center;

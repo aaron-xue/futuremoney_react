@@ -1787,12 +1787,11 @@ select[multiple].input-lg {
 
 .nav>li {
     position: relative;
-    display: block;
 }
 
 .nav>li>a {
     position: relative;
-    display: block;
+    display: inline-block;
     padding: 10px 15px;
 }
 
