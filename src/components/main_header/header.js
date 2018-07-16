@@ -11,8 +11,8 @@ class Header extends Component {
       showNav: false,
       showLanguageList:false,
       languages:{
-        EN:1,
-        CN:0
+        EN:0,
+        CN:1
       }
     }
   }
@@ -39,14 +39,14 @@ class Header extends Component {
           </div>
           <div className='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
             <ul className='nav navbar-nav navbar-right'>
-              <li className={'active link_item'}><a href="javascript:;">ABOUT</a></li>
-              <li className={'link_item'}><a href="javascript:;">TEAM</a></li>
-              <li className={'link_item'}><a href="javascript:;">PORTFOLIO</a></li>
-              <li className={'link_item'}><a href="javascript:;">FUNDS</a></li>
+              <li className={'active link_item'}><a href="javascript:;">关于我们</a></li>
+              <li className={'link_item'}><a href="javascript:;">团队</a></li>
+              <li className={'link_item'}><a href="javascript:;">投资组合</a></li>
+              <li className={'link_item'}><a href="javascript:;">基金</a></li>
               <li className={'language_change'}>
-                <a href="javascript:;" className={'current_ln language'}>EN</a>
+                <a href="javascript:;" className={'current_ln language'}>CN</a>
                 <i></i>
-                <a href="javascript:;" className={'language'}>CN</a>
+                <a href="javascript:;" className={'language'}>EN</a>
               </li>
               <li className={'language_change_mobile'}>
                 {language_change_mobile_c}

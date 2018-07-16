@@ -24,11 +24,11 @@ class IndexPage extends Component {
             </div>
             <div className='col-lg-7 tab_panel1_right col-xs-9 col-sm-7 col-md-7'>
               <div className='tab_panel1_right_tags'>
-                <p>ABOUT</p>
+                <p>关于</p>
                 <p>FUTUREMONEY</p>
               </div>
               <div className='tab_panel1_right_content'>
-                <p>A pioneer and global-leading investment institution focused exclusively on Blockchain technology. We have multi-layer business division including Future Money Research Institute, and all kinds of Blockchain assets fund such as Equity Fund, Cryptocurrency Investment Fund, Quantitative Fund ,etc.</p>
+                <p>全球领先的区块链投资研究机构。旗下设有行业研究院、区块链股权投资基金、数字货币投资基金、数字货币量化策略基金等。以价值投资为核心，构建了独特的投资策略，在市场周期性波动中实现了全天候的投资管理，坚定的助推区块链技术更新和应用落地。</p>
 
               </div>
             </div>
@@ -78,13 +78,13 @@ class IndexPage extends Component {
         <div className='tab_panel container' id='tab_panel4'>
           <div className='tab_panel5_item'>
             <div></div>
-            <h2>FUTUREMONEY VENTURES - PRIMARY MARKET FUND</h2>
-            <p>As a globalized investment institution, we aim to achieve Full-cycle investment management capability. That’s why we are focusing on acquire rich resources on overseas and mainland projects, strong partnerships in the whole industry and building a top-listed research team. And we pride ourselves on being an acute investor and having a sharp business sense. Only in order to accelerate the future of  Blockchain economy by supporting those Blockchain enabled companies with great potential.</p>
+            <h2>FUTUREMONEY VENTURES</h2>
+            <p>FUTUREMONEY旗下一级投资基金产品。专注于全球优质项目搜罗，拥有顶尖的研究团队和遍布全球的合作伙伴，具备区块链投资全周期综合管理实力。旨在通过对区块链初创企业的支持和帮助来助推行业发展。</p>
           </div>
           <div className='tab_panel5_item' style={{ marginTop: '3.4rem' }}>
             <div></div>
-            <h2>FUTUREMONEY QUANT - SECONDARY MARKET FUND</h2>
-            <p>FutureMoney Quant is powered by Mobius - a quantitative trading solution developed by FutureMoney.  Mobius’s quantitative strategies team seeks to generate beta by combining rigorous fundamental research with mathematical and statistical models to identify and execute on investment opportunities. With our multiple investment strategies across market arbitrage and cross-variety arbitrage etc, we are seeking a stable asset growth in the relatively unsettled market.</p>
+            <h2>FUTUREMONEY QUANT</h2>
+            <p>FUTUREMONEY旗下二级市场量化套利交易基金产品Mobius。通过选取登录交易所市值前二十名的主流数字货币，在全球十大交易所进行全自动化跨市场&跨品种&跨期套利，在周期性波动的市场中寻求稳定的价值增长。目前基金规模超过20万ETH。</p>
           </div>
         </div>
         <div className='tab_panel' id='tab_panel5'>
