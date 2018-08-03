@@ -13,8 +13,13 @@ const Layout = ({ children, data }) => (
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'keywords', content: 'sample, something' }
       ]}
+      link={[{
+        type: "image/x-icon",
+        rel: "shortcut icon",
+        href: "/favicon.ico"
+      },]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
     <div>
